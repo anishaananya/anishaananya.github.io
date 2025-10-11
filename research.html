@@ -5,9 +5,7 @@
   <title>Research</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     /* timeline container */
     .timeline {
@@ -21,7 +19,6 @@
       padding: 1.5rem 2rem;
     }
 
-    /* connecting line */
     .timeline::before {
       content: '';
       position: absolute;
@@ -34,7 +31,6 @@
       z-index: 0;
     }
 
-    /* timeline arrowheads */
     .timeline::after {
       content: '';
       position: absolute;
@@ -48,11 +44,6 @@
       transform: translateY(-50%);
     }
 
-    .timeline::before {
-      background-image: linear-gradient(to right, #003366 98%, transparent 100%);
-    }
-
-    /* timeline items */
     .timeline a {
       position: relative;
       color: #003366;
@@ -111,19 +102,44 @@
     </div>
   </div>
 
-  <!-- PROJECT SECTIONS (reversed order: newest to oldest) -->
+  <!-- PROJECT SECTIONS -->
   <div class="max-w-4xl mx-auto px-6 py-10 space-y-20">
 
+    <!-- QTIM LAB -->
     <section id="qtim">
       <h2 class="text-2xl font-bold text-[#003366] mb-2">QTIM Lab Intern (Sept 2025)</h2>
-      <p>Interned at CU Denver QTIM Lab, working on diabetes diagnosis using CGM data from the AI-READI dataset.</p>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Research Intern at Quantitative Translational Imaging in Medicine Lab @ CU Denver</li>
+        <li><strong>Project 1: AI-based diabetes progression prediction based on continuous glucose monitoring data from wearable sensors</strong>
+          <ul class="list-disc list-inside ml-5">
+            <li>Our work shows that compared to using HbA1c, which remains the standard for diagnosing diabetes, applying deep learning to continuous glucose monitoring data can provide more accurate detection of diabetes progression from healthy and prediabetic individuals to those managing the disease with oral medication.</li>
+          </ul>
+        </li>
+        <div class="my-4">
+          <!-- Replace below src with your actual image -->
+          <img src="images/qtim-diabetes.png" alt="QTIM Project Image" class="rounded-lg shadow-md border border-gray-200">
+        </div>
+        <li><strong>Project 2: Multimodal AI-based diabetes progression [TO DO]</strong></li>
+      </ul>
     </section>
 
+    <!-- MIT BEAVERWORKS -->
     <section id="beaverworks">
-      <h2 class="text-2xl font-bold text-[#003366] mb-2">MIT Beaverworks Intern (Aug 2025)</h2>
-      <p>Built multilingual framework and web app to help dysarthric patients communicate effectively. Accepted to BMES Annual Meeting 2025.</p>
+      <h2 class="text-2xl font-bold text-[#003366] mb-2">MIT Beaver Works Summer Institute Medlytics (July - October 2025)</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Selected for MIT BWSI Medlytics summer internship, where we learned about applications of AI and data analysis for medical data.</li>
+        <li>Dysarthria is a motor speech disorder that results in slow and often incomprehensible speech. Speech intelligibility significantly impacts communication, leading to barriers in social interactions.</li>
+        <li>We worked in a team of 4 to build a unified AI-based multilingual framework and web app to help dysarthric patients communicate effectively with dysarthria detection, severity classification, clean speech generation, speech-to-text conversion, and voice cloning.</li>
+        <li><em>This work demonstrates a scalable, cross-lingual approach to diagnosing and supporting dysarthric patients.</em></li>
+        <li><strong>Accepted for poster presentation to Biomedical Engineering Society Annual Meeting 2025</strong></li>
+      </ul>
+      <div class="my-4">
+        <!-- Replace below src with your actual poster image -->
+        <img src="images/mit-medlytics-poster.png" alt="MIT Beaverworks Poster" class="rounded-lg shadow-md border border-gray-200">
+      </div>
     </section>
 
+    <!-- Other projects -->
     <section id="stanfordaimi">
       <h2 class="text-2xl font-bold text-[#003366] mb-2">Stanford AIMI (June 2025)</h2>
       <p>Interned at Stanford AIMI, working on AI for chest X-ray classification and segmentation of pneumonia.</p>
@@ -158,6 +174,7 @@
       <h2 class="text-2xl font-bold text-[#003366] mb-2">Connect Four (2022)</h2>
       <p>Reinforcement learning–based AI Player for Connect Four. Grand Sweepstakes in County Fair, 3rd place in state.</p>
     </section>
+
   </div>
 
 </body>
