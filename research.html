@@ -8,8 +8,67 @@
     html {
       scroll-behavior: smooth;
     }
+
+    /* timeline line */
+    .timeline {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #003366;
+      transform: translateY(-50%);
+      z-index: 0;
+    }
+
+    /* each timeline item */
+    .timeline a {
+      position: relative;
+      background-color: #fefefe;
+      color: #003366;
+      font-weight: 600;
+      text-align: center;
+      z-index: 1;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .timeline a:hover {
+      color: #2563eb; /* blue-600 */
+      transform: translateY(-3px);
+    }
+
+    /* dots */
+    .timeline a::before {
+      content: '';
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-color: #003366;
+      border-radius: 9999px;
+      margin: 0 auto 0.5rem;
+    }
+
+    /* scroll container */
+    .timeline-container {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 1rem;
+    }
   </style>
 </head>
+
 <body class="bg-[#fefefe] text-gray-800 font-sans">
 
   <!-- NAVIGATION BAR -->
@@ -23,26 +82,27 @@
 
   <!-- PAGE TITLE -->
   <div class="text-center mt-16 mb-10">
-    <h1 class="text-4xl font-bold text-[#003366]">Hello World – research</h1>
+    <h1 class="text-4xl font-bold text-[#003366]">Research</h1>
   </div>
 
-  <!-- TIMELINE NAV -->
-  <div class="overflow-x-auto whitespace-nowrap flex justify-center items-center space-x-6 px-4 py-4 border-y border-gray-300 bg-[#f9fafb]">
-    <a href="#connectfour" class="text-[#003366] font-semibold hover:text-blue-600">2022 • Connect Four</a>
-    <a href="#lendmeyourear" class="text-[#003366] font-semibold hover:text-blue-600">2023 • Lend me your ear</a>
-    <a href="#tissueoforigin" class="text-[#003366] font-semibold hover:text-blue-600">2023 • Tissue of Origin for CUP</a>
-    <a href="#mediseeker" class="text-[#003366] font-semibold hover:text-blue-600">2024 • Mediseeker</a>
-    <a href="#nasa" class="text-[#003366] font-semibold hover:text-blue-600">2024 • NASA Research</a>
-    <a href="#metafusion" class="text-[#003366] font-semibold hover:text-blue-600">Apr 2025 • MetaFusion</a>
-    <a href="#insight" class="text-[#003366] font-semibold hover:text-blue-600">June 2025 • InSight</a>
-    <a href="#stanfordaimi" class="text-[#003366] font-semibold hover:text-blue-600">June 2025 • Stanford AIMI</a>
-    <a href="#beaverworks" class="text-[#003366] font-semibold hover:text-blue-600">Aug 2025 • MIT Beaverworks</a>
-    <a href="#qtim" class="text-[#003366] font-semibold hover:text-blue-600">Sept 2025 • QTIM Lab</a>
+  <!-- CONNECTED TIMELINE -->
+  <div class="timeline-container">
+    <div class="timeline">
+      <a href="#connectfour">2022<br>Connect Four</a>
+      <a href="#lendmeyourear">2023<br>Lend me your ear</a>
+      <a href="#tissueoforigin">2023<br>Tissue of Origin</a>
+      <a href="#mediseeker">2024<br>Mediseeker</a>
+      <a href="#nasa">2024<br>NASA Research</a>
+      <a href="#metafusion">Apr 2025<br>MetaFusion</a>
+      <a href="#insight">Jun 2025<br>InSight</a>
+      <a href="#stanfordaimi">Jun 2025<br>Stanford AIMI</a>
+      <a href="#beaverworks">Aug 2025<br>MIT Beaverworks</a>
+      <a href="#qtim">Sept 2025<br>QTIM Lab</a>
+    </div>
   </div>
 
   <!-- PROJECT SECTIONS -->
   <div class="max-w-4xl mx-auto px-6 py-10 space-y-20">
-    
     <section id="connectfour">
       <h2 class="text-2xl font-bold text-[#003366] mb-2">Connect Four (2022)</h2>
       <p>Reinforcement learning–based AI Player for Connect Four. Grand Sweepstakes in County Fair, 3rd place in state.</p>
@@ -92,7 +152,6 @@
       <h2 class="text-2xl font-bold text-[#003366] mb-2">QTIM Lab Intern (Sept 2025)</h2>
       <p>Interned at CU Denver QTIM Lab, working on diabetes diagnosis using CGM data from the AI-READI dataset.</p>
     </section>
-
   </div>
 
 </body>
