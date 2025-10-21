@@ -7,6 +7,7 @@
   <style>
     html { scroll-behavior: smooth; }
 
+    /* timeline container */
     .timeline {
       position: relative;
       display: flex;
@@ -74,17 +75,21 @@
 
   <!-- NAVIGATION BAR -->
   <nav class="bg-[#003366] text-white px-8 py-4 flex justify-between items-center sticky top-0 shadow-lg z-10">
-    <div class="text-lg font-semibold tracking-wide">
-      Ananya & Anisha
-    </div>
-    <div class="flex gap-8">
-      <a href="index.html" class="hover:underline">Home</a>
-      <a href="research.html" class="hover:underline">Research</a>
-      <a href="music.html" class="hover:underline">Music</a>
-      <a href="teaching.html" class="hover:underline">Teaching</a>
-      <a href="hiking.html" class="hover:underline">Hiking</a>
-    </div>
-  </nav>
+  <!-- LEFT SIDE -->
+  <div class="text-lg font-semibold tracking-wide">
+    Ananya & Anisha
+  </div>
+
+  <!-- RIGHT SIDE LINKS -->
+  <div class="flex gap-8">
+    <a href="index.html" class="hover:underline">Home</a>
+    <a href="research.html" class="hover:underline">Research</a>
+    <a href="music.html" class="hover:underline">Music</a>
+    <a href="teaching.html" class="hover:underline">Teaching</a>
+    <a href="hiking.html" class="hover:underline">Hiking</a>
+  </div>
+</nav>
+
 
   <!-- PAGE TITLE -->
   <div class="text-center mt-16 mb-10">
@@ -95,7 +100,7 @@
   <div class="timeline-container">
     <div class="timeline">
       <a href="#qtim">Sept 2025<br>QTIM Lab</a>
-      <a href="#assip">July 2025<br>ASSIP - Anisha</a>
+        <a href="#assip">July 2025<br>ASSIP - Anisha</a>
       <a href="#beaverworks">Aug 2025<br>MIT Beaverworks</a>
       <a href="#stanfordaimi">Jun 2025<br>Stanford AIMI</a>
       <a href="#insight">Jun 2025<br>InSight</a>
@@ -103,15 +108,126 @@
       <a href="#genelab">July 2024<br>NASA GeneLab - Ananya</a>
       <a href="#mediseeker">2024<br>Mediseeker</a>
       <a href="#tissueoforigin">2023<br>Tissue of Origin</a>
-      <a href="#lendmeyourear">2023<br>Lend Me Your Ear</a>
+      <a href="#lendmeyourear">2023<br>Lend me your ear</a>
       <a href="#connectfour">2022<br>Connect Four</a>
     </div>
   </div>
 
+
   <!-- PROJECT SECTIONS -->
   <div class="max-w-4xl mx-auto px-6 py-10 space-y-20">
 
-    <!-- INSIGHT -->
+    <!-- QTIM LAB -->
+    <section id="qtim">
+      <h2 class="text-2xl font-bold text-[#003366] mb-2">QTIM Lab Intern (Sept 2025)</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Research Intern at Quantitative Translational Imaging in Medicine Lab @ CU Denver</li>
+        <li><strong>Project 1: AI-based diabetes progression prediction based on continuous glucose monitoring data from wearable sensors</strong>
+          <ul class="list-disc list-inside ml-5">
+            <li>Our work shows that compared to using HbA1c, which remains the standard for diagnosing diabetes, applying deep learning to continuous glucose monitoring data can provide more accurate detection of diabetes progression from healthy and prediabetic individuals to those managing the disease with oral medication.</li>
+          </ul>
+        </li>
+        <div class="my-4">
+          <!-- Replace below src with your actual image -->
+          <img src="research_images/qtimproject1.png"
+     alt="QTIM Project Image"
+     class="rounded-lg shadow-md border border-gray-200 mx-auto w-3/4 md:w-2/3">
+
+        </div>
+        <li><strong>Project 2: Multimodal AI-based diabetes progression [TO DO]</strong></li>
+      </ul>
+    </section>
+
+     <!-- ASSIP ANISHA -->
+    <section id="assip">
+      <h2 class="text-2xl font-bold text-[#003366] mb-2">ASSIP – Anisha (July 2025 – Present)</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Research intern at Aspiring Scientists Summer Internship Program, George Mason University, under Professor Mihai Boicu.</li>
+        <li>Pulmonary embolism is a life-threatening condition with a high mortality rate that demands rapid diagnosis, relying on radiologists to manually review thousands of CTPA image slices.</li>
+        <li>Developed a two-stage transformer-based pipeline that automates Pulmonary embolism detection using both CTPA imaging and electronic health records.</li>
+        <li>The architecture improved accuracy by 3.1% compared to baseline models.</li>
+        <li><strong>Accepted as a technical paper presentation at the IEEE MIT Undergraduate Research Technology Conference.</strong></li>
+
+      </ul>
+      <div class="my-4 flex justify-center">
+  <img
+    src="research_images/assip.png"
+    alt="ASSIP Pulmonary Embolism Project"
+    class="rounded-lg shadow-md border border-gray-200 w-full sm:w-[70%] md:w-[60%]"
+  >
+</div>
+    </section>
+
+    <!-- MIT BEAVERWORKS -->
+<section id="beaverworks">
+  <h2 class="text-2xl font-bold text-[#003366] mb-2">
+    MIT Beaver Works Summer Institute Medlytics (July - October 2025)
+  </h2>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      Selected for MIT BWSI Medlytics summer internship, where we learned about applications of AI and data analysis for medical data.
+    </li>
+    <li>
+      Dysarthria is a motor speech disorder that results in slow and often incomprehensible speech.
+      Speech intelligibility significantly impacts communication, leading to barriers in social interactions.
+    </li>
+    <li>
+      We worked in a team of 4 to build a unified AI-based multilingual framework and web app to help dysarthric patients communicate effectively with dysarthria detection,
+      severity classification, clean speech generation, speech-to-text conversion, and voice cloning.
+    </li>
+    <li>
+      This work demonstrates a scalable, cross-lingual approach to diagnosing and supporting dysarthric patients.
+    </li>
+    <li>
+      <strong>Accepted for poster presentation to Biomedical Engineering Society Annual Meeting 2025</strong>
+    </li>
+  </ul>
+
+  <!-- Two poster images side by side -->
+  <div class="flex flex-wrap justify-center items-center gap-4 mt-6">
+    <img
+      src="research_images/dysarthria1.png"
+      alt="MIT Beaverworks Poster 1"
+      class="rounded-lg shadow-md border border-gray-200 w-full sm:w-[48%] md:w-[45%]"
+    >
+    <img
+      src="research_images/dysarthria2.png"
+      alt="MIT Beaverworks Poster 2"
+      class="rounded-lg shadow-md border border-gray-200 w-full sm:w-[48%] md:w-[45%]"
+    >
+  </div>
+</section>
+
+ 
+    <!-- STANFORD AIMI -->
+<section id="stanfordaimi">
+  <h2 class="text-2xl font-bold text-[#003366] mb-2">
+    Stanford AIMI Research Interns (June 2025)
+  </h2>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      Selected for Stanford Artificial Intelligence in Medical Imaging Summer Research Internship.
+    </li>
+    <li>
+      Explored applications of AI for classification, segmentation, and localization of pneumonia from chest X-rays.
+    </li>
+    <li>
+      At the final symposium, all projects were judged by Stanford faculty and our teams won first and second places.
+    </li>
+  </ul>
+
+  <!-- Replace this placeholder once your poster image is ready -->
+  <div class="my-4">
+    <img src="research_images/aimi.png"
+         alt="Stanford AIMI Poster"
+         class="rounded-lg shadow-md border border-gray-200 mx-auto w-3/4 md:w-2/3">
+  </div>
+</section>
+
+
+ <!-- INSIGHT -->
 <section id="insight">
   <h2 class="text-2xl font-bold text-[#003366] mb-2">
     InSight: AI-based Retinal Disease Screening Tool (June 2025)
@@ -172,83 +288,211 @@
 </section>
 
 
-    <!-- METAFUSION -->
-    <section id="metafusion">
-      <h2 class="text-2xl font-bold text-[#003366] mb-2">
-        MetaFusion: Multimodal Data Fusion Algorithm (Apr 2025)
-      </h2>
 
-      <ul class="list-disc list-inside space-y-2">
-        <li>
-          <strong>We developed MetaFusion, a novel multimodal fusion algorithm to combine clinical data with imaging data.</strong>
-          Our method shows superior performance for skin cancer classification (from smartphone images),
-          breast cancer detection (from X-ray mammograms), and glaucoma detection (from retinal fundus images).
-        </li>
-        <li>
-          In low-resource settings where medical data are often fragmented or incomplete, data fusion is essential for combining multiple modalities of data — such as imaging and patient metadata — to support accurate diagnosis.
-        </li>
-        <li>
-          Our method is parameter-efficient and demonstrates consistent performance across three diseases.
-        </li>
-        <li>
-          <strong>Our paper on MetaFusion was accepted for presentation at the IEEE International Symposium on Biomedical Imaging (ISBI) 2025.</strong>
-        </li>
-      </ul>
+  <!-- METAFUSION -->
+<section id="metafusion">
+  <h2 class="text-2xl font-bold text-[#003366] mb-2">
+    MetaFusion: Multimodal Data Fusion Algorithm (Apr 2025)
+  </h2>
 
-      <div class="my-4 flex flex-wrap justify-center items-center gap-4">
-        <img src="research_images/metafusion1.jpg" alt="MetaFusion Figure 1"
-             class="rounded-lg shadow-md border border-gray-200 w-full sm:w-[48%] md:w-[45%]">
-        <img src="research_images/metafusion2.png" alt="MetaFusion Figure 2"
-             class="rounded-lg shadow-md border border-gray-200 w-full sm:w-[48%] md:w-[45%]">
-      </div>
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      <strong>We developed MetaFusion, a novel multimodal fusion algorithm to combine clinical data with imaging data.</strong>
+      Our method shows superior performance for skin cancer classification (from smartphone images),
+      breast cancer detection (from X-ray mammograms), and glaucoma detection (from retinal fundus images).
+    </li>
+    <li>
+      In low-resource settings where medical data are often fragmented or incomplete, data fusion is essential for combining multiple modalities of data — such as imaging and patient metadata — to support accurate diagnosis.
+    </li>
+    <li>
+      Our method is parameter-efficient and demonstrates consistent performance across three diseases.
+    </li>
+    <li>
+      <strong>Our paper on MetaFusion was accepted for presentation at the IEEE International Symposium of Biomedical Imaging 2025.</strong>
+    </li>
+  </ul>
 
-      <ul class="list-disc list-inside space-y-2">
-        <li>
-          <strong>Publication:</strong>
-          <a href="https://ieeexplore.ieee.org/document/10981175"
-             target="_blank"
-             class="text-blue-600 hover:underline font-medium">
-             IEEE Xplore Proceedings
-          </a>
-        </li>
-      </ul>
-    </section>
+  <!-- MetaFusion image placeholder -->
+ <div class="my-4 flex flex-wrap justify-center items-center gap-4">
+  <img
+    src="research_images/metafusion1.jpg"
+    alt="MetaFusion Figure 1"
+    class="rounded-lg shadow-md border border-gray-200 w-full sm:w-[48%] md:w-[45%]"
+  >
+  <img
+    src="research_images/metafusion2.png"
+    alt="MetaFusion Figure 2"
+    class="rounded-lg shadow-md border border-gray-200 w-full sm:w-[48%] md:w-[45%]"
+  >
+</div>
 
-    <!-- TISSUE OF ORIGIN -->
-    <section id="tissueoforigin">
-      <h2 class="text-2xl font-bold text-[#003366] mb-2">
-        Deep Learning–Based Identification of Tissue Origin for Carcinomas of Unknown Primary (2023)
-      </h2>
 
-      <ul class="list-disc list-inside space-y-2">
-        <li>
-          <strong>Investigated the potential of microRNAs as biomarkers for detecting the tissue of origin in metastatic cancer through data-driven machine learning approaches.</strong>
-        </li>
-        <li>
-          Carcinoma of unknown primary (CUP) is a subset of metastatic cancers where the primary tumor remains unidentified — accounting for up to 5% of all cancers.
-        </li>
-        <li>
-          Lack of knowledge of the tissue of origin makes it difficult to devise tailored and effective treatments for patients with CUP.
-        </li>
-        <li>
-          Our models achieved up to 97% accuracy in predicting the tissue of origin for metastatic samples, demonstrating feasibility for clinical translation.
-        </li>
-        <li>
-          <strong>Publication:</strong>
-          <a href="https://bioinform.jmir.org/2024/1/e56538"
-             target="_blank"
-             class="text-blue-600 hover:underline font-medium">
-             Journal of Medical Internet Research – Bioinformatics & Biotechnology (2025 Issue)
-          </a>
-        </li>
-      </ul>
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      <strong>Publication:</strong> Available in <a href="#" class="text-blue-600 hover:underline font-medium">IEEE Xplore Proceedings</a>
+    </li>
+  </ul>
+</section>
 
-      <div class="my-4 flex justify-center">
-        <img src="research_images/mirna.png" alt="Tissue of Origin CUP Project Image"
-             class="rounded-lg shadow-md border border-gray-200 w-full sm:w-[70%] md:w-[60%]">
-      </div>
-    </section>
+<!-- NASA GENELAB -->
+<section id="genelab">
+  <h2 class="text-2xl font-bold text-[#003366] mb-2">
+    NASA GeneLab Intern – Ananya (July 2024)
+  </h2>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li>Selected for NASA GeneLab for High Schools, a national bioinformatics and space biology training internship.</li>
+    <li>Investigated colon transcriptome data from NASA Rodent Research 6 Mission.</li>
+    <li>Applied bioinformatics techniques to study effects of spaceflight on circadian disruption, immune regulation, T-Cell suppression, and downstream impacts on colon inflammation.</li>
+    <li><strong>Co-authored a research proposal accepted for presentation at the American Society of Gravitational Space Research Conference.</strong></li>
+  </ul>
+
+  <div class="my-4 flex justify-center">
+    <img
+      src="research_images/genelab.png"
+      alt="NASA GeneLab Research Project"
+      class="rounded-lg shadow-md border border-gray-200 w-full sm:w-[70%] md:w-[60%]"
+    >
+  </div>
+</section>
+
+   <!-- MEDISEEKER -->
+<section id="mediseeker">
+  <h2 class="text-2xl font-bold text-[#003366] mb-2">
+    Mediseeker: AI-based Drug Discovery Pipeline (2024)
+  </h2>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      <strong>We develop a three-stage pipeline with AI-based toxicity prediction and personalized drug sensitivity prediction to generate effective and nontoxic drug candidates.</strong>
+    </li>
+    <li>
+      Anti-cancer drug design is expensive and time-consuming, taking almost 2.8 billion dollars and more than 10–17 years to bring a new drug into clinical practice.
+    </li>
+    <li>
+      Personalized drug treatment for cancer has the potential to revolutionize cancer therapy by taking into account tumor response and drug resistance for each individual patient.
+    </li>
+    <li>
+      <strong>Our work on Mediseeker won second place in the county science fair.</strong> 
+      We were also <strong>invited as Student Speakers at the Johns Hopkins Global Health Leaders Conference.</strong>
+    </li>
+  </ul>
+
+  <!-- Image placeholder -->
+
+<div class="my-4 flex flex-wrap justify-center items-center gap-4">
+  <img
+    src="research_images/drugdiscovery1.jpg"
+    alt="Mediseeker Poster 1"
+    class="rounded-lg shadow-md border border-gray-200 w-full sm:w-[48%] md:w-[45%]"
+  >
+  <img
+    src="research_images/drugdiscovery2.png"
+    alt="Mediseeker Poster 2"
+    class="rounded-lg shadow-md border border-gray-200 w-full sm:w-[48%] md:w-[45%]"
+  >
+</div>
+
+</section>
+
+
+    <!-- TISSUE OF ORIGIN FOR CUP -->
+<section id="tissueoforigin">
+  <h2 class="text-2xl font-bold text-[#003366] mb-2">
+    Deep Learning–based Identification of Tissue Origin for Carcinomas of Unknown Primary (2023)
+  </h2>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      <strong>Investigated the potential of microRNAs as biomarkers for detection of the tissue of origin for metastasized cancer through data-driven machine learning approaches.</strong>
+    </li>
+    <li>
+      Carcinoma of unknown primary (CUP) is a subset of metastatic cancers in which the primary source of the cancer cells remains unidentified.
+      It is the eighth most common malignancy worldwide, accounting for up to 5% of all cancers.
+    </li>
+    <li>
+      Lack of knowledge of the tissue of origin makes it difficult to devise tailored and effective treatments for patients with CUP.
+    </li>
+    <li>
+      Our models achieved up to 97% accuracy in predicting the tissue of origin for metastatic samples, demonstrating the feasibility of developing robust classifiers for clinical applications.
+    </li>
+    <li>
+      <strong>Publication:</strong> 2025 Bioinformatics & Biotechnology Issue of the <em>Journal of Internet Medical Research</em> 
+      — <a href="#" target="_blank" class="text-blue-600 hover:underline font-medium">[add link]</a>
+    </li>
+  </ul>
+
+  <!-- Image placeholder -->
+  <div class="my-4 flex justify-center">
+    <img
+      src="research_images/mirna.png"
+      alt="Tissue of Origin CUP Project Image"
+      class="rounded-lg shadow-md border border-gray-200 w-full sm:w-[70%] md:w-[60%]"
+    >
+  </div>
+</section>
+
+
+   <!-- LEND ME YOUR EAR -->
+<section id="lendmeyourear">
+  <h2 class="text-2xl font-bold text-[#003366] mb-2">
+    Lend Me Your Ear: AI-based Speech Separation and Enhancement (2023)
+  </h2>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      <strong>Developed a simple real-time solution to help people hear better when there is interference from other speakers and noise.</strong>
+    </li>
+    <li>
+      Hearing impairment is a serious problem affecting millions of people, making it difficult for them to hear clearly in crowded or noisy environments, even with hearing aids.
+    </li>
+    <li>
+      We developed a new training set that allowed us to train a single model capable of removing interference from both sources, and implemented a real-time version that runs on a laptop with only ~40 ms latency.
+    </li>
+    <li>
+      Improved signal quality by 3 dB for interfering speakers and 7 dB for background noise.
+    </li>
+    <li>
+      <strong>Won first place at the county science fair and received three special awards from company sponsors.</strong>
+      Invited to the California State Science Fair and recognized with <strong>Honorable Mention in the state.</strong>
+    </li>
+  </ul>
+
+  <!-- Image placeholder -->
+  <div class="my-4 flex justify-center">
+    <img
+      src="research_images/lendear.jpg"
+      alt="Lend Me Your Ear Project Image"
+      class="rounded-lg shadow-md border border-gray-200 w-full sm:w-[70%] md:w-[60%]"
+    >
+  </div>
+</section>
+
+<!-- CONNECT FOUR -->
+<section id="connectfour">
+  <h2 class="text-2xl font-bold text-[#003366] mb-2">
+    AI Agent for Connect Four (2022)
+  </h2>
+
+  <ul class="list-disc list-inside space-y-2">
+    <li>
+      Built an AI-based Connect Four player using tabular Q-learning (reinforcement learning).
+    </li>
+    <li>
+      Compared performance of the model against human players and brute-force search.
+    </li>
+    <li>
+      <strong>Presented our work at the county science fair, winning “Grand Sweepstakes” in the county and overall first place.</strong>
+      Invited to Broadcom MASTERS and the California State Science Fair, where it won <strong>third place at the state level.</strong>
+    </li>
+  </ul>
+
+  <!-- Image placeholder -->
+
+</section>
+
 
   </div>
+
 </body>
 </html>
