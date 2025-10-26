@@ -4,79 +4,76 @@
   <meta charset="UTF-8">
   <title>Research</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html { scroll-behavior: smooth; }
+  <!-- CONNECTED TIMELINE -->
+<div class="timeline-container">
+  <div class="timeline justify-center flex-wrap gap-6">
+    <a href="#qtim">Sept 2025<br>QTIM Lab</a>
+    <a href="#assip">July 2025<br>ASSIP - Anisha</a>
+    <a href="#beaverworks">Aug 2025<br>MIT Beaverworks</a>
+    <a href="#stanfordaimi">Jun 2025<br>Stanford AIMI</a>
+    <a href="#insight">Jun 2025<br>InSight</a>
+    <a href="#metafusion">Apr 2025<br>MetaFusion</a>
+    <a href="#genelab">July 2024<br>NASA GeneLab - Ananya</a>
+    <a href="#mediseeker">2024<br>Mediseeker</a>
+    <a href="#tissueoforigin">2023<br>Tissue of Origin</a>
+    <a href="#lendmeyourear">2023<br>Lend me your ear</a>
+    <a href="#connectfour">2022<br>Connect Four</a>
+  </div>
+</div>
 
-    /* TIMELINE (centered version, no scrollbar) */
-    .timeline-container {
-      background-color: #f9fafb;
-      border-top: 1px solid #d1d5db;
-      border-bottom: 1px solid #d1d5db;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem 0;
-    }
+<style>
+  .timeline-container {
+    padding: 1rem 0;
+    border-top: 1px solid #d1d5db;
+    border-bottom: 1px solid #d1d5db;
+    background-color: #f9fafb;
+  }
 
-    .timeline {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-      width: 90%;
-      max-width: 1200px;
-      padding: 1.5rem 2rem;
-    }
+  .timeline {
+    position: relative;
+    display: flex;
+    justify-content: center; /* centers items */
+    align-items: center;
+    flex-wrap: wrap; /* ensures wrapping on smaller screens */
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
 
-    .timeline::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background-color: #003366;
-      transform: translateY(-50%);
-      z-index: 0;
-    }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #003366;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
 
-    .timeline::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      right: -10px;
-      width: 0;
-      height: 0;
-      border-top: 6px solid transparent;
-      border-bottom: 6px solid transparent;
-      border-left: 10px solid #003366;
-      transform: translateY(-50%);
-    }
+  .timeline::after {
+    content: '';
+    display: none; /* remove arrow at the end */
+  }
 
-    .timeline a {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #003366;
-      font-weight: 600;
-      background-color: #fefefe;
-      padding: 0.5rem 0.75rem;
-      z-index: 1;
-      border-radius: 6px;
-      transition: color 0.2s ease, transform 0.2s ease;
-      white-space: nowrap;
-    }
+  .timeline a {
+    position: relative;
+    color: #003366;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 8px;
+    z-index: 1;
+    background-color: #fefefe;
+    transition: color 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+  }
 
-    .timeline a:hover {
-      color: #2563eb;
-      transform: translateY(-4px);
-    }
-  </style>
+  .timeline a:hover {
+    color: #2563eb;
+    transform: translateY(-3px);
+  }
+</style>
 </head>
 
 <body class="bg-[#fefefe] text-gray-800 font-sans">
