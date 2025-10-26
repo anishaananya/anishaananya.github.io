@@ -7,14 +7,24 @@
   <style>
     html { scroll-behavior: smooth; }
 
-    /* timeline container */
+    /* TIMELINE STYLING */
+    .timeline-container {
+      overflow-x: auto;
+      padding: 0.5rem 0;
+      border-top: 1px solid #d1d5db;
+      border-bottom: 1px solid #d1d5db;
+      background-color: #f9fafb;
+      scroll-behavior: smooth;
+    }
+
     .timeline {
       position: relative;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      width: 100%;
-      max-width: 1200px;
+      justify-content: flex-start;
+      gap: 2rem;
+      width: max-content;
+      min-width: 100%;
       margin: 0 auto;
       padding: 1.5rem 2rem;
     }
@@ -46,27 +56,24 @@
 
     .timeline a {
       position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
       color: #003366;
       font-weight: 600;
-      text-align: center;
-      padding: 0 8px;
+      padding: 0.5rem 0.75rem;
       z-index: 1;
       background-color: #fefefe;
+      border-radius: 6px;
       transition: color 0.2s ease, transform 0.2s ease;
       white-space: nowrap;
     }
 
     .timeline a:hover {
       color: #2563eb;
-      transform: translateY(-3px);
-    }
-
-    .timeline-container {
-      overflow-x: auto;
-      padding-bottom: 0.5rem;
-      border-top: 1px solid #d1d5db;
-      border-bottom: 1px solid #d1d5db;
-      background-color: #f9fafb;
+      transform: translateY(-4px);
     }
   </style>
 </head>
